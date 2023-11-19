@@ -1,0 +1,3 @@
+In this implementation, the sender sends a single packet to the receiver and waits for an acknowledgment before sending the next packet. The receiver, upon receiving the message, sends an acknowledgment (ACK) back to the sender to indicate successful receipt.
+
+Please note that this is a basic example for educational purposes and does not handle issues like packet loss, corruption, or retransmissions, which are crucial for a real-world reliable data transfer protocol. You may need to implement error checking and retransmission mechanisms for a more robust and reliable protocol.
