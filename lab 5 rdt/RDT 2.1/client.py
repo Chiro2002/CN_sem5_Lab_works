@@ -19,7 +19,7 @@ def client_fun(server_address, server_port):
 
         curr_pkt_corrupt_prob=random.random()
         if curr_pkt_corrupt_prob>CORRUPT_PACKET_THRESHOLD:
-            print(f'Corrupted Packet for sequence no {sequence_number} recieved from server.Resending the packet with sequence no {sequence_number}.\n')
+            print(f'Corrupted ACK or NAK for sequence no {sequence_number} recieved from server.Resending the packet with sequence no {sequence_number}.\n')
             
         elif response=='NAK':
             print(f'NAK Packet for sequence no {sequence_number} recieved from server.Resending the packet with sequence no {sequence_number}.\n')
@@ -28,7 +28,7 @@ def client_fun(server_address, server_port):
             print(f'ACK Packet for sequence no {sequence_number} recieved from server.\n')
             sequence_number+=1
         
-        time.sleep(10)
+        time.sleep(5)
         
 
 if __name__=='__main__':

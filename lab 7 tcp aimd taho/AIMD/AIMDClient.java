@@ -34,7 +34,7 @@ public class AIMDClient {
                 out.println("ACK");
 
                 // Simulate a round-trip time
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.SECONDS.sleep(0.5);
             }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

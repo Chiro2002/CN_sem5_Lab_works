@@ -19,7 +19,7 @@ public class TcpTahoeServer {
             // Initialize TCP Tahoe parameters
             int cwnd = 1;
             int ssthresh = 64;
-            int noOfPacketsToSend = 2500;
+            int noOfPacketsToSend = 2000;
             int packetsSent = 0;
             try {
                 PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);

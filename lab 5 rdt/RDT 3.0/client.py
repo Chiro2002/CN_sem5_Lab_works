@@ -86,7 +86,7 @@ def client_fun(server_address, server_port):
                 client_socket.send(message.encode())
                 server_response = client_socket.recv(1024).decode()
 
-        time.sleep(7)
+        time.sleep(4)
 
 
 if __name__ == '__main__':

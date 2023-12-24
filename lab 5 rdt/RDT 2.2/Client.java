@@ -53,7 +53,7 @@ public class Client {
                         int receivedSeqNo = Integer.parseInt(parts[2]);
 
                         if (receivedSeqNo != SEQ_NO % 2) {
-                            System.out.println("Received incorrect ACK, resending the message...");
+                            System.out.println("Received incorrect NAK, resending the message...");
                             if (Math.random() < LOSS_PROBABILITY) {
                                 message = oldMessage;
                             }

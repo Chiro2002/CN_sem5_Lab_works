@@ -12,7 +12,7 @@ def receiver():
         receiver_socket.sendto("ACK".encode(), sender_address)
         print("Sent ACK")
         
-        if data.decode() == "Hello, Receiver!":
+        if data.decode() == "Hello, Receiver data succesfully decoded !":
             break
 
     receiver_socket.close()

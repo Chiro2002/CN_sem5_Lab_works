@@ -19,7 +19,7 @@ public class TcpRenoServer {
             // Initialize TCP Tahoe parameters
             int cwnd = 1;
             int ssthresh = 128;
-            int noOfPacketsToSend = 2000;
+            int noOfPacketsToSend = 1000;
             int packetsSent = 0;
             try {
                 PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);

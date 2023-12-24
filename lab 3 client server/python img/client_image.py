@@ -13,6 +13,8 @@ def main(server_ip, server_port):
 
     client.close()
 
+# ip=127.0.0.0 port= 9998 or 1234
+
 server_ip = sys.argv[1]
 server_port = int(sys.argv[2])
 main(server_ip, server_port)

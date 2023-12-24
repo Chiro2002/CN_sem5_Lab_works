@@ -6,7 +6,7 @@ def server(port):
     server_socket.bind(('127.0.0.1', port))
     server_socket.listen(1)  # Listen for incoming connections
 
-    print("Server is waiting for connections...")
+    print("Server is waiting for connections...!!!")
 
     while True:
         connection, client_address = server_socket.accept()
@@ -18,10 +18,10 @@ def server(port):
             choice=random.choice([True,False])
 
             if choice:
-                print(f"Recieved : {data}.\nSending ACK")
+                print(f"Recieved : {data}.\nSending ACK !!")
                 connection.send(f'ACK'.encode())
             else:
-                print(f"Sending NAK")
+                print(f"Sending NAK !!")
                 connection.send(f'NAK'.encode())
 
 if __name__ == "__main__":

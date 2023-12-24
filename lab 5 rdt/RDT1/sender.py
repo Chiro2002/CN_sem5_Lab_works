@@ -8,17 +8,17 @@ def sender():
     
     while True:
         sender_socket.sendto(message.encode(), receiver_address)
-        print("Sent:", message)
+        print("msg Sent succesfully :", message)
         
         # Wait for acknowledgment
         sender_socket.settimeout(2)  # Set a timeout for acknowledgment reception
         try:
             ack, _ = sender_socket.recvfrom(1024)
             if ack.decode() == "ACK":
-                print("Received ACK")
+                print("Received ACK !")
                 break
         except socket.timeout:
-            print("Timeout, no ACK received. Resending...")
+            print("Timeout, no ACK received. Resending...!!!")
 
     sender_socket.close()
 

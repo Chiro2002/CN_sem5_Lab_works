@@ -10,7 +10,7 @@ def server(port):
     server_socket.bind(('127.0.0.1', port))
     server_socket.listen(1)
 
-    print("Server is waiting for connections...")
+    print("Server is waiting ....")
 
     curr_state = 0
     client_reponse = ''
@@ -66,7 +66,7 @@ def server(port):
                     connection.send('ACK-1'.encode())
                     curr_state = 0
 
-            time.sleep(8)
+            time.sleep(5)
 
 
 if __name__ == "__main__":
